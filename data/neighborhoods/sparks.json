@@ -1,0 +1,46 @@
+{
+  "name": "Sparks",
+  "slug": "sparks",
+  "city": "Sparks",
+  "description": "Family-friendly city with Victorian Square events, the Nugget, and more affordable price points than Reno.",
+  "stats": {
+    "medianPrice": 385000,
+    "avgDom": 41,
+    "activeInventory": 320,
+    "pricePerSqft": 272,
+    "yoyChange": -3.1,
+    "recentSales": 3,
+    "medianSqft": 1400,
+    "priceRange": {
+      "min": 340000,
+      "max": 450000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "555 Baring Blvd",
+      "price": 340000,
+      "beds": 3,
+      "baths": 1.5,
+      "sqft": 1250,
+      "saleDate": "2026-04-19"
+    },
+    {
+      "address": "1111 Prater Way",
+      "price": 385000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1400,
+      "saleDate": "2026-04-14"
+    },
+    {
+      "address": "2222 Vista Blvd",
+      "price": 450000,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 1800,
+      "saleDate": "2026-04-11"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.440Z"
+}

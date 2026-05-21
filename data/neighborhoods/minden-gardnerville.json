@@ -1,0 +1,38 @@
+{
+  "name": "Minden/Gardnerville",
+  "slug": "minden-gardnerville",
+  "city": "Minden",
+  "description": "Carson Valley communities with stunning Sierra views, ranches, and a small-town feel.",
+  "stats": {
+    "medianPrice": 457500,
+    "avgDom": 38,
+    "activeInventory": 75,
+    "pricePerSqft": 281,
+    "yoyChange": -5.9,
+    "recentSales": 2,
+    "medianSqft": 1625,
+    "priceRange": {
+      "min": 435000,
+      "max": 480000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "1500 Hwy 395",
+      "price": 480000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1700,
+      "saleDate": "2026-04-16"
+    },
+    {
+      "address": "800 Toler Ln",
+      "price": 435000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1550,
+      "saleDate": "2026-04-04"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.444Z"
+}

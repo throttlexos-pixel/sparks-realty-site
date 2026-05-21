@@ -1,0 +1,30 @@
+{
+  "name": "NW Reno",
+  "slug": "nw-reno",
+  "city": "Reno",
+  "description": "Established neighborhoods near UNR and Rancho San Rafael Park. Mix of historic and updated homes.",
+  "stats": {
+    "medianPrice": 475000,
+    "avgDom": 60,
+    "activeInventory": 850,
+    "pricePerSqft": 306,
+    "yoyChange": 5.9,
+    "recentSales": 1,
+    "medianSqft": 1550,
+    "priceRange": {
+      "min": 475000,
+      "max": 475000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "3456 NW McCarran Blvd",
+      "price": 475000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1550,
+      "saleDate": "2026-03-30"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.438Z"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "South Reno",
+  "slug": "south-reno",
+  "city": "Reno",
+  "description": "Upscale suburban living with mountain views, top-rated schools, and easy access to Mt. Rose ski area.",
+  "stats": {
+    "medianPrice": 595000,
+    "avgDom": 60,
+    "activeInventory": 850,
+    "pricePerSqft": 289,
+    "yoyChange": 5.9,
+    "recentSales": 3,
+    "medianSqft": 2100,
+    "priceRange": {
+      "min": 520000,
+      "max": 1200000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "7890 Damonte Ranch Pkwy",
+      "price": 595000,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2100,
+      "saleDate": "2026-04-12"
+    },
+    {
+      "address": "2200 Double Diamond Pkwy",
+      "price": 520000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1800,
+      "saleDate": "2026-04-01"
+    },
+    {
+      "address": "890 Mt Rose Hwy",
+      "price": 1200000,
+      "beds": 5,
+      "baths": 4,
+      "sqft": 4100,
+      "saleDate": "2026-03-25"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.428Z"
+}

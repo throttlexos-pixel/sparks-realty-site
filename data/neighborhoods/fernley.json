@@ -1,0 +1,38 @@
+{
+  "name": "Fernley",
+  "slug": "fernley",
+  "city": "Fernley",
+  "description": "Growing community east of Reno with some of the most affordable homes in the region.",
+  "stats": {
+    "medianPrice": 325000,
+    "avgDom": null,
+    "activeInventory": null,
+    "pricePerSqft": 228,
+    "yoyChange": null,
+    "recentSales": 2,
+    "medianSqft": 1425,
+    "priceRange": {
+      "min": 310000,
+      "max": 340000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "100 E Main St",
+      "price": 340000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1500,
+      "saleDate": "2026-04-19"
+    },
+    {
+      "address": "350 Desert Wind Blvd",
+      "price": 310000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1350,
+      "saleDate": "2026-04-08"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.445Z"
+}

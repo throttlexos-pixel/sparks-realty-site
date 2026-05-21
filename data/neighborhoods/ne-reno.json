@@ -1,0 +1,21 @@
+{
+  "name": "NE Reno",
+  "slug": "ne-reno",
+  "city": "Reno",
+  "description": "Growing area with new developments, Stead, and access to outdoor recreation north of the city.",
+  "stats": {
+    "medianPrice": null,
+    "avgDom": 60,
+    "activeInventory": 850,
+    "pricePerSqft": null,
+    "yoyChange": 5.9,
+    "recentSales": 0,
+    "medianSqft": null,
+    "priceRange": {
+      "min": null,
+      "max": null
+    }
+  },
+  "recentListings": [],
+  "lastUpdated": "2026-05-06T19:37:03.439Z"
+}

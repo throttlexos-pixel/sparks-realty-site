@@ -1,0 +1,86 @@
+{
+  "region": "Northern Nevada",
+  "lastUpdated": "2026-05-06T19:38:18.961Z",
+  "summary": {
+    "totalCities": 5,
+    "avgMedianPrice": 787600,
+    "totalInventory": 1530,
+    "priceRange": {
+      "min": 490000,
+      "max": 1730000
+    }
+  },
+  "cities": [
+    {
+      "city": "Incline Village",
+      "statDate": "2026-05-06",
+      "medianPrice": 1730000,
+      "medianDom": 85,
+      "activeInventory": 95,
+      "momChange": 5.2,
+      "yoyChange": 82.1,
+      "avgPricePerSqft": 620,
+      "totalSales": 22,
+      "totalRecords": 3,
+      "source": "redfin_search"
+    },
+    {
+      "city": "Minden",
+      "statDate": "2026-05-06",
+      "medianPrice": 630000,
+      "medianDom": 38,
+      "activeInventory": 75,
+      "momChange": 0.8,
+      "yoyChange": -5.9,
+      "avgPricePerSqft": 245,
+      "totalSales": 7,
+      "totalRecords": 1,
+      "source": "redfin"
+    },
+    {
+      "city": "Reno",
+      "statDate": "2026-05-06",
+      "medianPrice": 547000,
+      "medianDom": 60,
+      "activeInventory": 850,
+      "momChange": 2.1,
+      "yoyChange": 5.9,
+      "avgPricePerSqft": 310,
+      "totalSales": 256,
+      "totalRecords": 12,
+      "source": "redfin"
+    },
+    {
+      "city": "Sparks",
+      "statDate": "2026-05-06",
+      "medianPrice": 541000,
+      "medianDom": 41,
+      "activeInventory": 320,
+      "momChange": 1.5,
+      "yoyChange": -3.1,
+      "avgPricePerSqft": 275,
+      "totalSales": 141,
+      "totalRecords": 5,
+      "source": "redfin"
+    },
+    {
+      "city": "Carson City",
+      "statDate": "2026-05-06",
+      "medianPrice": 490000,
+      "medianDom": 45,
+      "activeInventory": 190,
+      "momChange": -1.2,
+      "yoyChange": -9.3,
+      "avgPricePerSqft": 265,
+      "totalSales": 95,
+      "totalRecords": 3,
+      "source": "redfin_search"
+    }
+  ],
+  "insights": [
+    "Incline Village leads the region with a median price of $1,730,000.",
+    "Incline Village is the fastest-appreciating market at +82.1% year-over-year.",
+    "Carson City offers the most affordable entry point at $490,000.",
+    "Homes sell fastest in Minden with a median 38 days on market."
+  ]
+}

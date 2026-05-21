@@ -1,0 +1,46 @@
+{
+  "name": "Incline Village",
+  "slug": "incline-village",
+  "city": "Incline Village",
+  "description": "Lake Tahoe's premier community. Ski at Diamond Peak, beach access, and world-class recreation.",
+  "stats": {
+    "medianPrice": 1850000,
+    "avgDom": 85,
+    "activeInventory": 95,
+    "pricePerSqft": 629,
+    "yoyChange": 82.1,
+    "recentSales": 3,
+    "medianSqft": 2800,
+    "priceRange": {
+      "min": 750000,
+      "max": 2200000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "100 Lakeshore Blvd",
+      "price": 1850000,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 2800,
+      "saleDate": "2026-04-07"
+    },
+    {
+      "address": "250 Village Blvd Unit 3",
+      "price": 750000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1200,
+      "saleDate": "2026-04-02"
+    },
+    {
+      "address": "789 Tyner Way",
+      "price": 2200000,
+      "beds": 5,
+      "baths": 4,
+      "sqft": 3500,
+      "saleDate": "2026-03-22"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.443Z"
+}

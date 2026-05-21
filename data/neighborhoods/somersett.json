@@ -1,0 +1,30 @@
+{
+  "name": "Somersett",
+  "slug": "somersett",
+  "city": "Reno",
+  "description": "Master-planned community in NW Reno featuring golf, fitness center, pools, and mountain views.",
+  "stats": {
+    "medianPrice": 850000,
+    "avgDom": 60,
+    "activeInventory": 850,
+    "pricePerSqft": 266,
+    "yoyChange": 5.9,
+    "recentSales": 1,
+    "medianSqft": 3200,
+    "priceRange": {
+      "min": 850000,
+      "max": 850000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "2345 Somersett Pkwy",
+      "price": 850000,
+      "beds": 4,
+      "baths": 3.5,
+      "sqft": 3200,
+      "saleDate": "2026-03-28"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.442Z"
+}

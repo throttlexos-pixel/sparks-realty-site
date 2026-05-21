@@ -1,0 +1,38 @@
+{
+  "name": "Damonte Ranch",
+  "slug": "damonte-ranch",
+  "city": "Reno",
+  "description": "Master-planned community in South Reno with parks, trails, and highly rated schools.",
+  "stats": {
+    "medianPrice": 557500,
+    "avgDom": 60,
+    "activeInventory": 850,
+    "pricePerSqft": 286,
+    "yoyChange": 5.9,
+    "recentSales": 2,
+    "medianSqft": 1950,
+    "priceRange": {
+      "min": 520000,
+      "max": 595000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "7890 Damonte Ranch Pkwy",
+      "price": 595000,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2100,
+      "saleDate": "2026-04-12"
+    },
+    {
+      "address": "2200 Double Diamond Pkwy",
+      "price": 520000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1800,
+      "saleDate": "2026-04-01"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.441Z"
+}

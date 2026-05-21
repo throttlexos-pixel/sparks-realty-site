@@ -1,0 +1,38 @@
+{
+  "name": "Dayton",
+  "slug": "dayton",
+  "city": "Dayton",
+  "description": "Historic Nevada town experiencing rapid growth with new construction and competitive pricing.",
+  "stats": {
+    "medianPrice": 380000,
+    "avgDom": null,
+    "activeInventory": null,
+    "pricePerSqft": 249,
+    "yoyChange": null,
+    "recentSales": 2,
+    "medianSqft": 1525,
+    "priceRange": {
+      "min": 365000,
+      "max": 395000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "200 Dayton Valley Rd",
+      "price": 395000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1600,
+      "saleDate": "2026-04-17"
+    },
+    {
+      "address": "450 Riverview Dr",
+      "price": 365000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1450,
+      "saleDate": "2026-04-10"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.444Z"
+}

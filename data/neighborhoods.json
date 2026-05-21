@@ -1,0 +1,159 @@
+{
+  "lastUpdated": "2026-05-06T19:37:03.445Z",
+  "neighborhoods": [
+    {
+      "name": "South Reno",
+      "slug": "south-reno",
+      "city": "Reno",
+      "description": "Upscale suburban living with mountain views, top-rated schools, and easy access to Mt. Rose ski area.",
+      "medianPrice": 595000,
+      "pricePerSqft": 289,
+      "recentSales": 3,
+      "yoyChange": 5.9,
+      "avgDom": 60
+    },
+    {
+      "name": "Midtown",
+      "slug": "midtown",
+      "city": "Reno",
+      "description": "Walkable arts district with craft breweries, boutiques, and a vibrant food scene. Reno's cultural hub.",
+      "medianPrice": 365000,
+      "pricePerSqft": 326,
+      "recentSales": 3,
+      "yoyChange": 5.9,
+      "avgDom": 60
+    },
+    {
+      "name": "NW Reno",
+      "slug": "nw-reno",
+      "city": "Reno",
+      "description": "Established neighborhoods near UNR and Rancho San Rafael Park. Mix of historic and updated homes.",
+      "medianPrice": 475000,
+      "pricePerSqft": 306,
+      "recentSales": 1,
+      "yoyChange": 5.9,
+      "avgDom": 60
+    },
+    {
+      "name": "NE Reno",
+      "slug": "ne-reno",
+      "city": "Reno",
+      "description": "Growing area with new developments, Stead, and access to outdoor recreation north of the city.",
+      "medianPrice": null,
+      "pricePerSqft": null,
+      "recentSales": 0,
+      "yoyChange": 5.9,
+      "avgDom": 60
+    },
+    {
+      "name": "Sparks",
+      "slug": "sparks",
+      "city": "Sparks",
+      "description": "Family-friendly city with Victorian Square events, the Nugget, and more affordable price points than Reno.",
+      "medianPrice": 385000,
+      "pricePerSqft": 272,
+      "recentSales": 3,
+      "yoyChange": -3.1,
+      "avgDom": 41
+    },
+    {
+      "name": "Spanish Springs",
+      "slug": "spanish-springs",
+      "city": "Sparks",
+      "description": "Fast-growing suburban area with newer construction, good schools, and desert-meets-mountain views.",
+      "medianPrice": 552500,
+      "pricePerSqft": 235,
+      "recentSales": 2,
+      "yoyChange": -3.1,
+      "avgDom": 41
+    },
+    {
+      "name": "Damonte Ranch",
+      "slug": "damonte-ranch",
+      "city": "Reno",
+      "description": "Master-planned community in South Reno with parks, trails, and highly rated schools.",
+      "medianPrice": 557500,
+      "pricePerSqft": 286,
+      "recentSales": 2,
+      "yoyChange": 5.9,
+      "avgDom": 60
+    },
+    {
+      "name": "Caughlin Ranch",
+      "slug": "caughlin-ranch",
+      "city": "Reno",
+      "description": "Prestigious gated community with panoramic city views, hiking trails, and luxury homes.",
+      "medianPrice": 725000,
+      "pricePerSqft": 302,
+      "recentSales": 1,
+      "yoyChange": 5.9,
+      "avgDom": 60
+    },
+    {
+      "name": "Somersett",
+      "slug": "somersett",
+      "city": "Reno",
+      "description": "Master-planned community in NW Reno featuring golf, fitness center, pools, and mountain views.",
+      "medianPrice": 850000,
+      "pricePerSqft": 266,
+      "recentSales": 1,
+      "yoyChange": 5.9,
+      "avgDom": 60
+    },
+    {
+      "name": "Incline Village",
+      "slug": "incline-village",
+      "city": "Incline Village",
+      "description": "Lake Tahoe's premier community. Ski at Diamond Peak, beach access, and world-class recreation.",
+      "medianPrice": 1850000,
+      "pricePerSqft": 629,
+      "recentSales": 3,
+      "yoyChange": 82.1,
+      "avgDom": 85
+    },
+    {
+      "name": "Carson City",
+      "slug": "carson-city",
+      "city": "Carson City",
+      "description": "Nevada's capital city offering affordability, historic charm, and proximity to Lake Tahoe.",
+      "medianPrice": 420000,
+      "pricePerSqft": 263,
+      "recentSales": 3,
+      "yoyChange": -9.3,
+      "avgDom": 45
+    },
+    {
+      "name": "Minden/Gardnerville",
+      "slug": "minden-gardnerville",
+      "city": "Minden",
+      "description": "Carson Valley communities with stunning Sierra views, ranches, and a small-town feel.",
+      "medianPrice": 457500,
+      "pricePerSqft": 281,
+      "recentSales": 2,
+      "yoyChange": -5.9,
+      "avgDom": 38
+    },
+    {
+      "name": "Dayton",
+      "slug": "dayton",
+      "city": "Dayton",
+      "description": "Historic Nevada town experiencing rapid growth with new construction and competitive pricing.",
+      "medianPrice": 380000,
+      "pricePerSqft": 249,
+      "recentSales": 2,
+      "yoyChange": null,
+      "avgDom": null
+    },
+    {
+      "name": "Fernley",
+      "slug": "fernley",
+      "city": "Fernley",
+      "description": "Growing community east of Reno with some of the most affordable homes in the region.",
+      "medianPrice": 325000,
+      "pricePerSqft": 228,
+      "recentSales": 2,
+      "yoyChange": null,
+      "avgDom": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Spanish Springs",
+  "slug": "spanish-springs",
+  "city": "Sparks",
+  "description": "Fast-growing suburban area with newer construction, good schools, and desert-meets-mountain views.",
+  "stats": {
+    "medianPrice": 552500,
+    "avgDom": 41,
+    "activeInventory": 320,
+    "pricePerSqft": 235,
+    "yoyChange": -3.1,
+    "recentSales": 2,
+    "medianSqft": 2350,
+    "priceRange": {
+      "min": 525000,
+      "max": 580000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "3333 Spanish Springs Blvd",
+      "price": 525000,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 2200,
+      "saleDate": "2026-04-06"
+    },
+    {
+      "address": "4444 Wingfield Hills Rd",
+      "price": 580000,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 2500,
+      "saleDate": "2026-03-29"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.440Z"
+}

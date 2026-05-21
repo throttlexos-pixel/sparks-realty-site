@@ -1,0 +1,46 @@
+{
+  "name": "Carson City",
+  "slug": "carson-city",
+  "city": "Carson City",
+  "description": "Nevada's capital city offering affordability, historic charm, and proximity to Lake Tahoe.",
+  "stats": {
+    "medianPrice": 420000,
+    "avgDom": 45,
+    "activeInventory": 190,
+    "pricePerSqft": 263,
+    "yoyChange": -9.3,
+    "recentSales": 3,
+    "medianSqft": 1600,
+    "priceRange": {
+      "min": 375000,
+      "max": 550000
+    }
+  },
+  "recentListings": [
+    {
+      "address": "500 N Carson St",
+      "price": 420000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1600,
+      "saleDate": "2026-04-13"
+    },
+    {
+      "address": "1800 College Pkwy",
+      "price": 375000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1450,
+      "saleDate": "2026-04-09"
+    },
+    {
+      "address": "3200 Lakeview Rd",
+      "price": 550000,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2000,
+      "saleDate": "2026-04-03"
+    }
+  ],
+  "lastUpdated": "2026-05-06T19:37:03.443Z"
+}
