@@ -65,6 +65,30 @@
       if (res.ok || res.status === 200 || res.status === 302) {
         form.classList.add('hidden');
         successDiv.classList.remove('hidden');
+        // Send backup notification with phone number via FormSubmit
+        try {
+          var notifyData = new FormData();
+          notifyData.append('_subject', '🔥 NEW RECRUIT LEAD: ' + fields.find(function(f){return f.name==='firstname'}).value + ' ' + (fields.find(function(f){return f.name==='lastname'})||{value:''}).value);
+          notifyData.append('Name', (fields.find(function(f){return f.name==='firstname'})||{value:''}).value + ' ' + (fields.find(function(f){return f.name==='lastname'})||{value:''}).value);
+          notifyData.append('Email', (fields.find(function(f){return f.name==='email'})||{value:''}).value);
+          notifyData.append('Phone', (fields.find(function(f){return f.name==='phone'})||{value:''}).value);
+          notifyData.append('Brokerage', (fields.find(function(f){return f.name==='company'})||{value:''}).value);
+          notifyData.append('Source', 'joinsparksrealty.com/join/');
+          notifyData.append('_captcha', 'false');
+          notifyData.append('_template', 'table');
+          fetch('https://formsubmit.co/ajax/throttlexos@gmail.com', {
+            method: 'POST',
+            body: notifyData
+          }).catch(function(){});
+          fetch('https://formsubmit.co/ajax/LarryRoberts@qmcorp.com', {
+            method: 'POST',
+            body: notifyData
+          }).catch(function(){});
+          fetch('https://formsubmit.co/ajax/Tim.Roth@sparksrealty.com', {
+            method: 'POST',
+            body: notifyData
+          }).catch(function(){});
+        } catch(e) {}
       } else {
         return res.json().then(function(data) {
           throw new Error(data.message || 'Submission failed (status ' + res.status + ')');
