@@ -98,7 +98,7 @@ form.addEventListener('submit',function(e){
           fetch('https://replica-told-changelog-bryant.trycloudflare.com/lead',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
-            body:JSON.stringify({firstname:fn,lastname:ln,email:em,phone:ph,company:br||''})
+            body:JSON.stringify({firstname:fn,lastname:ln,email:em,phone:ph,company:br||'',utm_campaign:typeof utm_campaign!=='undefined'?utm_campaign:'',utm_source:typeof utm_source!=='undefined'?utm_source:'',utm_medium:typeof utm_medium!=='undefined'?utm_medium:''})
           }).catch(function(){});
           fetch("https://replica-told-changelog-bryant.trycloudflare.com/lead",{
             method:"POST",
