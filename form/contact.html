@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Sparks Realty</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: transparent; }
+label { display: block; font-size: 14px; font-weight: 600; color: #374151; margin-bottom: 4px; }
+label span { color: #ef4444; }
+input { width: 100%; padding: 12px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 16px; color: #0a1628; outline: none; transition: border-color 0.2s; }
+input:focus { border-color: #c9a84c; box-shadow: 0 0 0 3px rgba(201,168,76,0.15); }
+input::placeholder { color: #9ca3af; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+.field { margin-bottom: 16px; }
+button { width: 100%; padding: 16px; background: #c9a84c; color: white; font-size: 18px; font-weight: 600; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+button:hover { background: #b8963f; transform: translateY(-1px); }
+button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.note { text-align: center; color: #9ca3af; font-size: 12px; margin-top: 12px; }
+.error { background: #fef2f2; color: #dc2626; padding: 12px; border-radius: 8px; font-size: 14px; display: none; margin-bottom: 12px; }
+.success { text-align: center; padding: 32px 0; display: none; }
+.success h3 { font-size: 24px; font-weight: 700; color: #0a1628; margin: 12px 0 8px; }
+.success p { color: #6b7280; }
+</style>
+</head>
+<body>
+<form id="join-form">
+  <div class="grid">
+    <div class="field">
+      <label for="fn">First Name <span>*</span></label>
+      <input type="text" id="fn" required placeholder="First name">
+    </div>
+    <div class="field">
+      <label for="ln">Last Name <span>*</span></label>
+      <input type="text" id="ln" required placeholder="Last name">
+    </div>
+  </div>
+  <div class="field">
+    <label for="em">Email <span>*</span></label>
+    <input type="email" id="em" required placeholder="you@email.com">
+  </div>
+  <div class="field">
+    <label for="ph">Phone Number <span>*</span></label>
+    <input type="tel" id="ph" required placeholder="(775) 555-0000">
+  </div>
+  <div class="field">
+    <label for="br">Current Brokerage</label>
+    <input type="text" id="br" placeholder="Where you're currently licensed (optional)">
+  </div>
+  <div class="field">
+    <label for="msg">Message <span>*</span></label>
+    <textarea id="msg" required placeholder="Tell us about your situation..." rows="4" style="width:100%;padding:12px 16px;border:1px solid #e5e7eb;border-radius:8px;font-size:16px;color:#0a1628;outline:none;resize:vertical;font-family:inherit"></textarea>
+  </div>
+  <div class="error" id="err"></div>
+  <button type="submit" id="btn">Send Message</button>
+  <p class="note">100% confidential. Your current broker won't know.</p>
+</form>
+<div class="success" id="ok">
+  <div style="font-size:48px">🎉</div>
+  <h3>You're in!</h3>
+  <p>We'll reach out within minutes. Tim is standing by.</p>
+</div>
+<script>
+var form=document.getElementById('join-form'),btn=document.getElementById('btn'),err=document.getElementById('err'),ok=document.getElementById('ok');
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  err.style.display='none';
+  btn.disabled=true;btn.textContent='Sending...';
+  var fn=document.getElementById('fn').value.trim(),
+      ln=document.getElementById('ln').value.trim(),
+      em=document.getElementById('em').value.trim(),
+      ph=document.getElementById('ph').value.trim(),
+      br=document.getElementById('br').value.trim();
+  // Capture UTM params from parent window or current URL
+    var params = new URLSearchParams(window.parent.location.search || window.location.search);
+    var utm_campaign = params.get('utm_campaign') || '';
+    var utm_source = params.get('utm_source') || '';
+    var utm_medium = params.get('utm_medium') || '';
+    var fields=[{name:'firstname',value:fn},{name:'lastname',value:ln},{name:'email',value:em},{name:'phone',value:ph}];
+  if(br)fields.push({name:'company',value:br});
+    var msg=document.getElementById('msg');
+    if(msg&&msg.value.trim())fields.push({name:'message',value:msg.value.trim()});
+    if(utm_campaign)fields.push({name:'utm_campaign',value:utm_campaign});
+    if(utm_source)fields.push({name:'utm_source',value:utm_source});
+    if(utm_medium)fields.push({name:'utm_medium',value:utm_medium});
+  fetch('https://api.hsforms.com/submissions/v3/integration/submit/246258287/a61d7d26-aec6-4372-84a8-cb11b30ea5a9',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({fields:fields,context:{pageUri:window.parent.location.href||window.location.href,pageName:'Join Sparks Realty'}})
+  }).then(function(r){
+    if(r.ok||r.status===200||r.status===302){
+      form.style.display='none';ok.style.display='block';
+      try{
+        var d=new FormData();
+        d.append('_subject','🔥 NEW RECRUIT: '+fn+' '+ln);
+        d.append('Name',fn+' '+ln);d.append('Email',em);d.append('Phone',ph);
+        d.append('Brokerage',br||'(not provided)');d.append('Source','joinsparksrealty.com/join/');
+        d.append('_captcha','false');d.append('_template','table');
+        fetch('https://formsubmit.co/ajax/throttlexos@gmail.com',{method:'POST',body:d}).catch(function(){});
+        fetch('https://formsubmit.co/ajax/LarryRoberts@qmcorp.com',{method:'POST',body:d}).catch(function(){});
+        fetch('https://formsubmit.co/ajax/Tim.Roth@sparksrealty.com',{method:'POST',body:d}).catch(function(){});
+      }catch(x){}
+    }else{throw new Error('Failed');}
+  }).catch(function(x){
+    err.textContent='Something went wrong. Please call us at (775) 447-9447.';
+    err.style.display='block';btn.disabled=false;btn.textContent='Send Message';
+  });
+});
+</script>
+</body>
+</html>
