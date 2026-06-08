@@ -69,8 +69,16 @@ form.addEventListener('submit',function(e){
       em=document.getElementById('em').value.trim(),
       ph=document.getElementById('ph').value.trim(),
       br=document.getElementById('br').value.trim();
-  var fields=[{name:'firstname',value:fn},{name:'lastname',value:ln},{name:'email',value:em},{name:'phone',value:ph}];
+  // Capture UTM params from parent window or current URL
+    var params = new URLSearchParams(window.parent.location.search || window.location.search);
+    var utm_campaign = params.get('utm_campaign') || '';
+    var utm_source = params.get('utm_source') || '';
+    var utm_medium = params.get('utm_medium') || '';
+    var fields=[{name:'firstname',value:fn},{name:'lastname',value:ln},{name:'email',value:em},{name:'phone',value:ph}];
   if(br)fields.push({name:'company',value:br});
+    if(utm_campaign)fields.push({name:'utm_campaign',value:utm_campaign});
+    if(utm_source)fields.push({name:'utm_source',value:utm_source});
+    if(utm_medium)fields.push({name:'utm_medium',value:utm_medium});
   fetch('https://api.hsforms.com/submissions/v3/integration/submit/246258287/a61d7d26-aec6-4372-84a8-cb11b30ea5a9',{
     method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({fields:fields,context:{pageUri:window.parent.location.href||window.location.href,pageName:'Join Sparks Realty'}})
