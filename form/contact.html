@@ -100,6 +100,17 @@ form.addEventListener('submit',function(e){
         fetch('https://formsubmit.co/ajax/throttlexos@gmail.com',{method:'POST',body:d}).catch(function(){});
         fetch('https://formsubmit.co/ajax/LarryRoberts@qmcorp.com',{method:'POST',body:d}).catch(function(){});
         fetch('https://formsubmit.co/ajax/Tim.Roth@sparksrealty.com',{method:'POST',body:d}).catch(function(){});
+          // Also POST to our webhook for instant CRM contact creation
+          fetch('https://promises-karma-landing-orbit.trycloudflare.com/lead',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({firstname:fn,lastname:ln,email:em,phone:ph,company:br||''})
+          }).catch(function(){});
+          fetch("https://promises-karma-landing-orbit.trycloudflare.com/lead",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({firstname:fn,lastname:ln,email:em,phone:ph,company:br||""})
+          }).catch(function(){});
       }catch(x){}
     }else{throw new Error('Failed');}
   }).catch(function(x){
